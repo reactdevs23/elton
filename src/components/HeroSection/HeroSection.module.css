@@ -150,7 +150,7 @@
     margin-top: 4%;
   }
   .button {
-    font-size: 60px;
+    font-size: 55px;
     max-width: 370px;
   }
 }
@@ -160,6 +160,10 @@
   }
   .tagline {
     margin-top: 3%;
+  }
+  .button {
+    font-size: 50px;
+    max-width: 320px;
   }
 }
 
@@ -172,10 +176,6 @@
   }
   .tagline {
     font-size: 45px;
-  }
-  .button {
-    font-size: 50px;
-    max-width: 320px;
   }
 }
 @media only screen and (max-width: 767px) {
