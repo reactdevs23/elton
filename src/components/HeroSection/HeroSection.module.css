@@ -7,6 +7,7 @@
   object-fit: cover;
   object-position: center;
   min-height: 654px;
+  max-height: 100vh;
   display: block;
 }
 .textContainer {
@@ -135,6 +136,21 @@
   width: 100%;
   white-space: nowrap;
   padding: 10px 20px;
+}
+@media only screen and (max-width: 1366px) {
+  .title {
+    font-size: 350px;
+  }
+  .heading {
+    font-size: 100px;
+  }
+  .tagline {
+    font-size: 45px;
+  }
+  .button {
+    font-size: 50px;
+    max-width: 320px;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .button {
