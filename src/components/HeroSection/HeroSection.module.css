@@ -137,27 +137,32 @@
   white-space: nowrap;
   padding: 10px 20px;
 }
-@media only screen and (max-width: 1366px) {
+
+@media only screen and (max-width: 1536px) {
   .title {
     font-size: 350px;
   }
   .heading {
-    font-size: 100px;
+    font-size: 80px;
   }
   .tagline {
     font-size: 45px;
+    margin-top: 4%;
   }
-  .button {
-    font-size: 50px;
-    max-width: 320px;
-  }
-}
-@media only screen and (max-width: 1199px) {
   .button {
     font-size: 60px;
     max-width: 370px;
   }
 }
+@media only screen and (max-width: 1440px) {
+  .title {
+    font-size: 300px;
+  }
+  .tagline {
+    margin-top: 3%;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .title {
     font-size: 300px;
