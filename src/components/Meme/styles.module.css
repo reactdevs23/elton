@@ -1,0 +1,93 @@
+.container {
+  position: relative;
+  overflow: hidden;
+}
+.img {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+  min-height: 633px;
+  display: block;
+}
+.textWrapper {
+  position: absolute;
+  z-index: 1;
+
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  top: auto;
+  bottom: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title {
+  color: #fff;
+  font-family: Alumni Sans Collegiate One;
+  font-size: 400px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42%;
+  text-transform: uppercase;
+}
+.heading {
+  font-family: var(--primaryFont);
+  font-size: 80px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: -2px;
+}
+.readmore {
+  background: var(--White, #fff);
+  color: #000;
+  text-align: center;
+  font-family: var(--primaryFont);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 36px */
+  width: 100%;
+  padding: 8px 15px;
+  display: block;
+  margin-top: 8%;
+  transition: 0.3s;
+}
+.readmore:hover {
+  opacity: 0.8;
+  transform: translateY(-3px);
+}
+@media only screen and (max-width: 1199px) {
+  .heading {
+    font-size: 70px;
+  }
+  .title {
+    font-size: 350px;
+  }
+  .readmore {
+    font-size: 27px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .heading {
+    font-size: 60px;
+  }
+  .title {
+    font-size: 300px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .textWrapper {
+    justify-content: center;
+  }
+  .heading {
+    font-size: 50px;
+  }
+  .title {
+    font-size: 180px;
+  }
+}

@@ -1,0 +1,229 @@
+.imgContainer {
+  position: relative;
+}
+.img {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+  min-height: 654px;
+  display: block;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+
+  left: 50%;
+  transform: translateX(-50%);
+  top: auto;
+  bottom: 30px;
+}
+.titleAndTagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.title {
+  color: #fff;
+  font-family: Alumni Sans Collegiate One;
+  font-size: 400px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43%;
+}
+.heading {
+  font-family: var(--primaryFont);
+  font-size: 100px;
+  text-align: left;
+  font-weight: 700;
+}
+.tagline {
+  color: #fff;
+  text-align: center;
+
+  font-family: var(--primaryFont);
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  max-width: 1150px;
+
+  margin-top: 5%;
+  text-shadow: 5px 5px 10px #c44a85, 5px 5px 10px #c44a85;
+
+  display: inline;
+  border-radius: 10px;
+  letter-spacing: -3px;
+}
+.logoContainer,
+.socialContainer {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0 20px;
+
+  height: 101px;
+  display: none;
+}
+
+.logo {
+  width: 92px;
+  height: 90px;
+}
+.logoText {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: Alumni Sans Collegiate One;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 120px */
+}
+.twitterIcon {
+  font-size: 60px;
+  color: #000;
+}
+.telegramContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #229ed9;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.telegramIcon {
+  font-size: 40px;
+
+  border-radius: 50%;
+
+  color: #fff;
+  margin-right: 2px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 25px;
+}
+.mobileButtons {
+  display: none;
+}
+.button {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: var(--primaryFont);
+  font-size: 80px;
+  letter-spacing: -3px;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 120%; /* 120px */
+  background: rgba(255, 255, 255, 0.5);
+  max-width: 450px;
+  width: 100%;
+  white-space: nowrap;
+  padding: 10px 20px;
+}
+@media only screen and (max-width: 1199px) {
+  .button {
+    font-size: 60px;
+    max-width: 370px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .title {
+    font-size: 300px;
+  }
+  .heading {
+    font-size: 80px;
+  }
+  .tagline {
+    font-size: 45px;
+  }
+  .button {
+    font-size: 50px;
+    max-width: 320px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .button {
+    font-size: 40px;
+    max-width: 220px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .img {
+    min-height: 730px;
+  }
+  .title {
+    font-size: 170px;
+    line-height: 50%;
+  }
+  .titleAndTagline {
+    gap: 5px;
+  }
+  .heading {
+    font-size: 70px;
+  }
+  .tagline {
+    font-size: 35px;
+    margin-top: 4%;
+  }
+  .socialContainer {
+    display: flex;
+    margin-left: auto;
+    margin-top: 6.5%;
+    margin-right: -5.5%;
+
+    padding: 5px 10px;
+    height: auto;
+  }
+  .twitterIcon {
+    font-size: 50px;
+  }
+  .telegramContainer {
+    width: 50px;
+    height: 50px;
+  }
+  .telegramIcon {
+    font-size: 30px;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .mobileButtons {
+    display: flex;
+    margin-top: -5px;
+  }
+  .dekstopButtons {
+    display: none;
+  }
+  .button {
+    max-width: 100%;
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .title {
+    line-height: 50%;
+  }
+
+  .tagline {
+    font-size: 35px;
+    margin-top: 4%;
+  }
+}

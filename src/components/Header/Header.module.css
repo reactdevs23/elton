@@ -1,0 +1,68 @@
+.header {
+  position: absolute;
+  top: 10px;
+
+  width: 100%;
+  z-index: 5;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer,
+.socialContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.7);
+
+  height: 101px;
+  padding: 0 10px;
+}
+.socialContainer {
+  gap: 13px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0 25px;
+}
+.logo {
+  width: 92px;
+  height: 90px;
+}
+.logoText {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: Alumni Sans Collegiate One;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 120px */
+  text-transform: uppercase;
+}
+.twitterIcon {
+  font-size: 60px;
+  color: #000;
+}
+.telegramContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #229ed9;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.telegramIcon {
+  font-size: 40px;
+
+  border-radius: 50%;
+
+  color: #fff;
+  margin-right: 2px;
+}
+@media only screen and (max-width: 640px) {
+  .socialContainer {
+    display: none;
+  }
+}
